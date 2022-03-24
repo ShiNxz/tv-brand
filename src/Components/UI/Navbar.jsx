@@ -22,7 +22,7 @@ const NavBar = ({ search }) => {
                 <div className="flex items-center justify-between py-2 content-center h-full">
                     <div className="flex items-center">
                         <div className="hidden md:block ml-10 flex items-baseline space-x-4">
-                            <Link className="text-gray-300 duration-300 hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium" to="/">
+                            <Link className="text-gray-300 duration-300 dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium" to="/">
                                 <FontAwesomeIcon className="mr-2" icon={ faHouse } />
                                 Home Page
                             </Link>

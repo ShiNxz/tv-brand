@@ -1,6 +1,6 @@
 const config = {
     axios: {
-        baseURI: 'http://api.tvmaze.com',
+        baseURI: 'https://api.tvmaze.com',
         headers: {
             'Accept': 'application/json',
             'Content-Type': 'application/json'
