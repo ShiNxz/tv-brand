@@ -40,19 +40,19 @@ const Index = ({ search }) => {
     return (
         <>
             <div className='mt-16'>
-                <div className='h-[37rem] flex justify-center items-center'>
-                    <div className='bg-gradient-to-r overflow-auto from-indigo-500 to-indigo-800 h-[37rem] w-full absolute top-0 skew-y-3'>
-                    <div className='bg-header h-[37rem] w-full flex justify-center items-center absolute opacity-25 blur-sm bg-cover bg-center'></div>
+                <div className='h-[40rem] flex justify-center items-center'>
+                    <div className='bg-gradient-to-r overflow-auto from-indigo-500 to-indigo-800 h-[43rem] -mt-12 w-full absolute top-0 skew-y-3'>
+                        <div className='bg-header h-[43rem] w-full flex justify-center items-center absolute opacity-25 blur-sm bg-cover bg-center'></div>
                     </div>
-                    <Card>
-                        <span className='text-white font-bold text-3xl'>TV Show and web series database.</span>
-                        <span className='text-slate-200 font-semibold text-md'>Create personalised schedules. Episode guide, case, crew and character information.</span>
+                    <Card className='w-4/6 xl:w-2/6 h-2/5 flex justify-center text-center items-center flex-col p-4 lg:p-10'>
+                        <span className='text-white font-bold text-base xl:text-3xl'>TV Show and web series database.</span>
+                        <span className='text-slate-200 font-semibold text-sm xl:text-md'>Create personalised schedules. Episode guide, case, crew and character information.</span>
                     </Card>
                 </div>
-                <div className="p-4 px-24" id="shows">
+                <div className="p-4 lg:px-24" id="shows">
                     {
                     shows ? (
-                        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-6 gap-12 -mt-48">
+                        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-6 gap-4 md:gap-9 lg:gap-8 1xl:gap-12 -mt-48">
                         {
                           shows.length > 0 ? shows.map(show => <Show key={show.id} show={show}/>) : `Couldn't find any...`
                         }

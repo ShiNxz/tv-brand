@@ -1,4 +1,3 @@
-// const { success:bool, info:object, error:string } = useFetch(route:'/auth/exa', info:object, etc)
 import axios from 'axios'
 import config from '../config'
 

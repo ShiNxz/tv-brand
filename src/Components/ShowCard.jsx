@@ -12,7 +12,7 @@ const Show = ({ show }) => {
                 <div className="w-full p-4">
                     {
                         show?.rating?.average ? (
-                            [...Array(5)].map((x, i) => <FontAwesomeIcon key={i} className={parseInt(show?.rating.average/2, 10) >= i+1 ? 'text-gray-700 dark:text-gray-300 text-xs' : 'text-gray-300 dark:text-gray-700 text-xs'} icon={faStar} /> )
+                            [...Array(5)].map((x, i) => <FontAwesomeIcon key={i} className={(show?.rating.average/2).toFixed(0) >= i+1 ? 'text-gray-700 dark:text-gray-300 text-xs' : 'text-gray-300 dark:text-gray-700 text-xs'} icon={faStar} /> )
                         )
                         :
                         ([...Array(5)].map((x, i) => <FontAwesomeIcon key={i} className='text-gray-900 text-xs' icon={faStar} /> ))
