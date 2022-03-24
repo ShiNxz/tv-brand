@@ -2,7 +2,14 @@ module.exports = {
   darkMode: 'class',
   content: ["./src/**/*.{html,js}"],
   theme: {
-    extend: {},
+    fontFamily: {
+      'sans': ['Rubik'],
+    },
+    extend: {
+      backgroundImage: {
+        'header': "url('./Assets/header.jpg')",
+      }
+    },
   },
   plugins: [],
 }
